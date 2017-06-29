@@ -1,8 +1,4 @@
-// Base Layer
-var baseLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Nope',
-    maxZoom: 18,
-});
+var bingsTiles = new L.BingLayer(BING_KEY, { type: 'Road'});
 
 // POIS non-admin
 var truc = L.marker([38.2969, 140.9356465]).bindPopup('This is truc');
@@ -25,10 +21,10 @@ var regionLayer02 = L.layerGroup([L.geoJSON(polygon02)]);
 var map = L.map('mymap', {
     center: [38.497333, 140.943604],
     zoom: 7,
-    layers: [baseLayer, poisLayer, poisJakeLayer, regionLayer01, regionLayer02]
+    layers: [bingsTiles, poisLayer, poisJakeLayer, regionLayer01, regionLayer02]
 });
 
-L.control.layers({"Base": baseLayer }, {
+L.control.layers({"Base": bingsTiles }, {
     "Pois": poisLayer,
     "<img src=\"jake.png\" width=\"10px\" height=\"10px\"> Jake": poisJakeLayer,
     "Region 01" : regionLayer01,
