@@ -1,0 +1,16 @@
+.leaflet-container {
+    font-family: "FF Din Pro", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+}
+
+.leaflet-control-layers-overlays input {
+    margin: 0;
+}
+
+.leaflet-control-layers-overlays i {
+    display: inline-block;
+    height: 11px;
+    margin-right: 3px;
+    opacity: 0.7;
+    width: 11px;
+}

@@ -1,4 +1,4 @@
-var polygon01 = {
+const POLYGON01 = {
   "type": "FeatureCollection",
   "features": [
     {
